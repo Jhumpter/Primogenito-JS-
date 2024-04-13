@@ -1,2 +1,2 @@
 # Primogenito
- Primeiro projeto de HTML, CSS e JS
+ Meus primeiros projetos em Javascript
