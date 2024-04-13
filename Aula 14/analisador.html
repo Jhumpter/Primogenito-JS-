@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Analisador de números</header>
+    <section>
+        <div>
+            <p>Digite os números (diferentes)
+                <input type="number" id="num" min="1">
+                <input type="button" value="Adicionar" onclick="adicionar()">
+                <input type="button" value="Excluir" onclick="excluir()">
+                <select name="analise" id="select" size="10">
+                <option value="n0" id="n0">Números adicionados:                   
+                </option>
+                </select>
+            </p>
+        </div>
+        <div id="div">
+            <input type="button" value="Analisar" onclick="analise()">   
+            <p id="analisado">
+                Analisando...
+            </p>
+        </div>
+    </section>   
+    <footer></footer>
+</body>
+<script src="script.js"></script>
+</html>
