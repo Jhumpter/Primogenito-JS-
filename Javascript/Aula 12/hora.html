@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    <section>
+        <div id="texto">
+        </div>
+        <br>
+        <div id="imagem">
+           
+        </div>
+    </section>
+    <footer>
+        <p>&copy;João Paulo</p>
+    </footer>
+</body>
+<script>
+    var now = new Date()
+    var horas = now.getHours()
+    var texto = document.getElementById("texto")
+    texto.innerText = `Agora são ${horas} horas` 
+    var paisagem = document.getElementById("imagem") 
+    var cor = document.getElementById('Cor')
+    if (horas < 12) {
+        paisagem.innerHTML =  "<img src='manhã_final.png' width=200 alt='Manhã'>"
+        document.body.style.backgroundColor = '#a9aeb4'
+        }
+    else if (horas <= 18){
+        paisagem.innerHTML = "<img src='tarde_final.jpeg' width=200 alt='Tarde'>"
+        document.body.style.backgroundColor ='#e0b413'
+        }
+    else {
+        paisagem.innerHTML = "<img src='noite_final.jpeg' width=200 alt='Noite'>"
+        document.body.style.backgroundColor = '#146a8d'
+        }
+</script>
+</html>

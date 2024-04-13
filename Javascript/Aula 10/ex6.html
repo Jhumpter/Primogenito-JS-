@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <h5>DOM</h5>
+    <p id="gg" onclick = 'clicar()'>Texto para teste</p>
+    <div class="GG" onmouseenter = 'rolar()'>ROLE AGORA</div>
+</body>
+<script>
+    a = document.getElementById("gg")
+    b = document.querySelector ('div.GG')
+    function clicar () {
+        a.style.color = "green"
+       }
+    function rolar () {
+        b.innerText = 'Rolou'
+    }
+    c = document.querySelector ('p#gg')
+    c.addEventListener('mouseenter' , entrar)
+    function entrar () {
+        c.innerHTML= 'Troll'
+    }
+    //Evento no HTML tem q ter 'on' antes, ja no script não
+</script>
+</html>
