@@ -12,10 +12,22 @@
              </head> 
              <body>
                <h1>Turma do aluno</h1>
+               <p>Turma baseada na idade</p>
+               <ul>
+                <li>Infantil</li>
+                <li>Juvenil A</li>
+                <li>Juvenil B</li>
+                <li>Adulto</li>
+                <li>Sênior</li>
+               </ul>
              </body>           
              <script>
                let idade = prompt('Informe a idade do aluno')
+               if (isNaN(idade)){
+                alert('Digite um número!')
+               } else {
                idade <= 9 ? turma="Infantil" : (idade <= 14 ? turma="Juvenil A" : (idade <= 17 ? turma='Juvenil B' : (idade <= 35 ? turma="Adulto" : (idade > 35 ? turma="Sênior": turma='Tá de palhaçada?' ))))
-               document.write (turma)
+               document.write (`A turma do aluno é ${turma}`)
+               }
             </script>
              </html>
