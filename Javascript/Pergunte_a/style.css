@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-color: rgb(59, 59, 59);
+}
+
+h1{
+    font-size: 50px;
+    color: #c4c4c4;
+}
+
+input{
+    margin: 30px;
+}

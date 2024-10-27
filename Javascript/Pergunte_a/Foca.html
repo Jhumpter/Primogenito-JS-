@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunte à foca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pergunte à foca</h1>
+    <img src="https://i.pinimg.com/236x/85/bf/a9/85bfa9b75655b7a9061a1223d9909654.jpg" alt="Geraldo" height="350px">
+    <div>
+        <input type="text" class="escolha1"> ou <input type="text" class="escolha2">
+    </div>
+    <button type="button" onclick="perguntar()"> Perguntar </button>
+</body>
+<script>
+    function perguntar(){
+        var aleatorio = Math.floor(Math.random() * 10);
+        if (aleatorio % 2)
+            var resposta = document.querySelector(".escolha1").value
+        else 
+            var resposta = document.querySelector(".escolha2").value
+        alert("A foca escolheu " + resposta)
+    }
+</script>
+</html>
